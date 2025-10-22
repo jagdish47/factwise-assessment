@@ -157,13 +157,6 @@ Displays employee status with appropriate styling.
 - **Cell Formatting**: Custom formatters for salary and other fields
 - **Theme Integration**: Uses AG Grid Quartz theme with custom modifications
 
-## 🚀 Deployment
-
-To build for production:
-
-```bash
-npm run build
-```
 
 
 
