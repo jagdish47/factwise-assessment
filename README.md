@@ -80,29 +80,7 @@ npm run dev
 
 4. Open your browser and navigate to `http://localhost:5173`
 
-## 📊 Data Structure
 
-The application uses a JSON file containing employee data with the following structure:
-
-```typescript
-interface Employee {
-  id: number;
-  firstName: string;
-  lastName: string;
-  email: string;
-  department: string;
-  position: string;
-  salary: number;
-  hireDate: string;
-  age: number;
-  location: string;
-  performanceRating: number;
-  projectsCompleted: number;
-  isActive: boolean;
-  skills: string[];
-  manager: string | null;
-}
-```
 
 ## 🎨 Styling Features
 
@@ -187,24 +165,8 @@ To build for production:
 npm run build
 ```
 
-The built files will be in the `dist` directory, ready for deployment to any static hosting service.
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
 
-## 📄 License
 
-This project is licensed under the MIT License.
 
-## 🆘 Support
-
-For questions or issues, please open an issue in the repository or contact the development team.
-
----
-
-Built with ❤️ using React, TypeScript, and AG Grid
