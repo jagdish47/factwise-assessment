@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import { AgGridReact } from "ag-grid-react";
 import { ModuleRegistry, AllCommunityModule } from "ag-grid-community";
+import type { ColDef } from "ag-grid-community";
+import type { Employee } from "../../types/employee";
 
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-quartz.css";
@@ -11,7 +13,7 @@ ModuleRegistry.registerModules([AllCommunityModule]);
 export function EmployeeGrid() {
   const rowData = employeesData.employees;
 
-  const [colDefs, _setColDefs] = useState([
+  const [colDefs, _setColDefs] = useState<ColDef<Employee>[]>([
     {
       headerName: "ID",
       field: "id",
